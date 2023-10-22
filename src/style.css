@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e2f6;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    background-image: url("./bg.jpg.jpg");
+    background-size: cover;
+  }
+  
+  .todo-list {
+    background: rgba(255, 255, 255, 0.199);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 #8ba3a1;
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    min-width: 30vw;
+  }
+  
+  .add-todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(87,177,237);
+    background: linear-gradient(13deg, rgba(87,177,237,1) 0%, rgba(14,83,157,1) 51%, rgba(20,57,122,1) 100%);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .add-todo input {
+    flex: 1;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.95rem;
+  }
+
+  .add-todo input::placeholder{
+    color: white;
+  }
+  
+  .add-todo button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    background: #e7c146;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .add-todo button:hover {
+    background: #f0d48f;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
+  
+  .todo-item input {
+    flex: 1;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .todo-item button {
+    padding: 5px 10px;
+    background: transparent;
+    /* color: #fff; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .todo-item button:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  /* .todo-item button:hover {
+    background: #978fa2;
+  } */
+  
+  .todo-item i{
+    font-size: 1.3vw;
+  }
+
+  
